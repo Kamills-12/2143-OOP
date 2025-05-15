@@ -4,6 +4,20 @@
 
 ---
 
+## Project Directory (Python Files Included):
+
+```
+P01/
+├── json_db.py         # All class definitions: JsonDB, PeopleDB, MeteoriteDB, EarthquakeDB
+├── main.py            # Sample usage and test runner
+├── people.json        # Sample data for PeopleDB
+├── meteorites.json    # Sample data for MeteoriteDB
+├── quakes.json        # Sample data for EarthquakeDB
+└── README.md          # This Markdown write-up
+```
+
+---
+
 ## Overview & Key Concepts:
 
 This project demonstrates the use of object-oriented programming and JSON files to simulate a basic, modular database system.
