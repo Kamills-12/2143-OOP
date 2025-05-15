@@ -1,0 +1,20 @@
+from json_db import PeopleDB, MeteoriteDB, EarthquakeDB
+
+def main():
+    # PeopleDB
+    people = PeopleDB("people.json")
+    people.create_person("Teresa", "Smith", "teresa@example.com")
+    print("Find Teresa:", people.find_by_name(first_name="Teresa"))
+
+    # MeteoriteDB
+    meteors = MeteoriteDB("meteorites.json")
+    print("Heaviest Meteorites:", meteors.find_heaviest())
+    print("From 1900–1960:", meteors.find_by_year_range(1900, 1960))
+
+    # EarthquakeDB
+    quakes = EarthquakeDB("quakes.json")
+    print("Magnitude >= 6.0:", quakes.filter_by_magnitude(6.0))
+    print("Quakes in Japan:", quakes.filter_by_place("Japan"))
+
+if __name__ == "__main__":
+    main()
